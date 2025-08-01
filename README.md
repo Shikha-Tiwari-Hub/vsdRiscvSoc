@@ -4,8 +4,8 @@ This repository documents my progress in the **VSD RISC-V SoC**, including setup
 # OBJECTIVE
 To successfully complete the initial task of the **VSD RISC-V SoC** by setting up a fully functional RISC-V environment using a prebuilt GCC toolchain, Spike ISA simulator, and Proxy Kernel. The goal is verified by executing a custom uniqueness test program on the simulated RISC-V platform.
 # Prerequisites
-1.  Ubuntu 20.04 or later (Linux environment recommended) \
-2.  Do **not** open or mount the Ubuntu ISO manually — it's only needed during OS installation.\
+1.  Ubuntu 20.04 or later (Linux environment recommended).
+2.  Do **not** open or mount the Ubuntu ISO manually — it's only needed during OS installation.
 3.  Use the terminal inside your installed Ubuntu system for all steps below.
 
 # Environment Setup Instructions
@@ -13,7 +13,7 @@ To successfully complete the initial task of the **VSD RISC-V SoC** by setting u
 Ubuntu 22.04.5 LTS (Desktop)\
 🔗[Download ISO (64-bit)](https://releases.ubuntu.com/22.04/ubuntu-22.04.5-desktop-amd64.iso)\
 Oracle VirtualBox (for running Ubuntu VM)\
-🔗[Download VirtualBox for Windows](https://www.virtualbox.org/wiki/Downloads)\
+🔗[Download VirtualBox for Windows](https://www.virtualbox.org/wiki/Downloads)
 ## step 2: Create a Virtual Machine in VirtualBox
 After creating the VM, load the downloaded Ubuntu ISO as a startup disk and install Ubuntu normally inside the VM.
 ## step 3: Ubuntu Setup (after installation)
@@ -102,13 +102,13 @@ make
 sudo make install
 ```
 # Task 8 - Ensure the cross bin directory is in PATH
-## step-1 Temporarily set the path
+## step-1: Temporarily set the path
 Command (current shell):
 ```bash
 export PATH=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
 2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 ```
-## step-2 Add it to PATH permanently
+## step-2: Add it to PATH permanently
 Command (persistent for new terminals): 
 ```bash
 echo 'export PATH=$HOME/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
