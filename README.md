@@ -141,7 +141,8 @@ cat ~/riscv_toolchain/unique_test.c
 nano ~/riscv_toolchain/unique_test.c
 ```
 ## step-3:  Create unique_test.c 
-🗂️ **File:** [`unique_test.c`](./unique_test.c)
+🗂️ **File:** [`unique_test.c`](./unique_test.c) \
+
 ## step-4: Compile with injected identity and RISC‑V flags
 ```bash
 riscv64-unknown-elf-gcc -O2 -Wall -march=rv64imac -mabi=lp64 \ -DUSERNAME="$(id -un)" -DHOSTNAME="$(hostname -s)" \ 
@@ -160,7 +161,8 @@ Host: <your-hostname>
 UniqueID: 0x<64-bit-hex> 
 GCC_VLEN: <number>
 ```
-![Unique Test Output](unique_test_output_shikha.png)
+![unique_test_output_shikha](https://github.com/user-attachments/assets/6341814e-c59c-4b14-897f-a38474c99a18)
+
 
 
 
