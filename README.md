@@ -25,6 +25,8 @@ After creating the VM, load the downloaded Ubuntu ISO as a startup disk and inst
 
 -This makes sure your Ubuntu system is fresh and error-free before you begin Task-1.
 
+# Task 1 - RISC-V Toolchain Setup Tasks & Uniqueness Test 
+
 # Task 1 - Install base developer tools 
 These are common build prerequisites (compilers, linkers, autotools) and libraries 
 required by the RISC‑V simulator, proxy kernel, and other tooling. GTKWaves is included for 
@@ -210,6 +212,10 @@ UniqueID: 0x<64-bit-hex>
 GCC_VLEN: <number>
 ```
 ![WhatsApp Image 2025-08-02 at 12 05 41_44ee91df](https://github.com/user-attachments/assets/8cc67962-ae2b-4e05-b1f8-d6adbfb1820b)
+
+# Task 2 - Prove Your Local RISCV Setup (Run, Disassemble, Decode)
+
+ 
 
 
 
