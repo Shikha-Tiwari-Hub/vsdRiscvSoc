@@ -21,6 +21,8 @@ After creating the VM, load the downloaded Ubuntu ISO as a startup disk and inst
 * open Terminal (ctrl+alt+T)
 * Run this command in your WSL terminal:
 ```sudo apt-get update```\
+![WhatsApp Image 2025-08-02 at 12 26 49_d17108ca](https://github.com/user-attachments/assets/44bab3a0-62c9-4263-8721-9ff99800c4b0)
+
 -This makes sure your Ubuntu system is fresh and error-free before you begin Task-1.
 
 # Task 1 - Install base developer tools 
@@ -40,6 +42,8 @@ pwd=$PWD
 mkdir -p riscv_toolchain 
 cd riscv_toolchain
 ```
+![WhatsApp Image 2025-08-02 at 11 25 43_6f754942](https://github.com/user-attachments/assets/83b2b0ca-769a-4007-949a-e7975214182f)
+
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
 This Provides riscv64-unknown-elf-gcc (newlib) to compile bare‑metal/user‑space RISC‑V 
 programs. Using a prebuilt toolchain avoids a long source build. 
@@ -51,6 +55,8 @@ wget "https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc
 tar -xvzf riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux
 ubuntu14.tar.gz
 ```
+![WhatsApp Image 2025-08-02 at 11 48 47_3c681748](https://github.com/user-attachments/assets/e0244228-8669-40f1-8110-10fda4052538)
+
 # Task 4 -  Add toolchain to PATH (current shell + persistent)
 ## step-1 Temporarily set the path
 Command (current shell):
@@ -58,6 +64,8 @@ Command (current shell):
 export PATH=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
 2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 ```
+![WhatsApp Image 2025-08-02 at 11 37 33_0e213008](https://github.com/user-attachments/assets/b9c1e254-caa6-4bee-b34b-26377fbb0231)
+
 ## step-2 Add it to PATH permanently
 Command (persistent for new terminals): 
 ```bash
@@ -65,11 +73,15 @@ echo 'export PATH=$HOME/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
 2019.08.0-x86_64-linux-ubuntu14/bin:$PATH' >> ~/.bashrc 
 source ~/.bashrc
 ```
+![WhatsApp Image 2025-08-02 at 11 38 11_7e3c2eec](https://github.com/user-attachments/assets/bd3bb64e-97e7-4a9d-907b-c39eb11962ab)
+
 # Task 5 - Install Device Tree Compiler (DTC)
 Some RISC-V simulators and tools rely on it - so it's required as a supporting tool.
 ```bash
 sudo apt-get install -y device-tree-compiler
 ```
+![WhatsApp Image 2025-08-02 at 12 27 10_ee552365](https://github.com/user-attachments/assets/8171c44e-3145-4771-b091-a5ca980322f9)
+
 # Task 6 - Build and install Spike (RISC‑V ISA simulator) 
 ## step-1: Clone the Spike Repository
 ```bash
@@ -101,6 +113,10 @@ mkdir -p build && cd build
 make
 sudo make install
 ```
+![WhatsApp Image 2025-08-02 at 11 45 10_46457e10](https://github.com/user-attachments/assets/42667435-9c3e-4277-9014-5aea3c8d6933)
+![WhatsApp Image 2025-08-02 at 11 46 32_ad3dba4b](https://github.com/user-attachments/assets/0074b644-10d8-424a-b7c9-67625356f46a)
+![WhatsApp Image 2025-08-02 at 11 49 51_4fd51598](https://github.com/user-attachments/assets/5d62cb06-6dc8-4823-8427-000d92b7885a)
+
 # Task 8 - Ensure the cross bin directory is in PATH
 ## step-1: Temporarily set the path
 Command (current shell):
@@ -108,6 +124,8 @@ Command (current shell):
 export PATH=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
 2019.08.0-x86_64-linux-ubuntu14/bin:$PATH
 ```
+![WhatsApp Image 2025-08-02 at 11 50 44_ec0625bb](https://github.com/user-attachments/assets/bb0ed8e3-40e6-4582-982e-d0412d3860b1)
+
 ## step-2: Add it to PATH permanently
 Command (persistent for new terminals): 
 ```bash
@@ -115,6 +133,8 @@ echo 'export PATH=$HOME/riscv_toolchain/riscv64-unknown-elf-gcc-8.3.0
 2019.08.0-x86_64-linux-ubuntu14/bin:$PATH' >> ~/.bashrc 
 source ~/.bashrc
 ```
+![WhatsApp Image 2025-08-02 at 12 27 47_78860880](https://github.com/user-attachments/assets/5ee6333f-9224-4485-8a54-62ce09d5014c)
+
 # Task 9 -  (Optional) Install Icarus Verilog
 # Task 10 -  Quick sanity checks 
 ```bash
@@ -128,6 +148,9 @@ spike --version || spike -h
 ```bash
 which pk 
 ```
+![WhatsApp Image 2025-08-02 at 11 57 21_f571cf77](https://github.com/user-attachments/assets/bbf039ec-1498-4dfb-a78d-650703d97692)
+![WhatsApp Image 2025-08-02 at 11 57 53_aa6bbaa6](https://github.com/user-attachments/assets/cf3e489f-0ca8-4f1d-9752-ce0b64b1f8e4)
+
 # Final Deliverable: A Unique C Test (Username & Machine Dependent) 
 A unique test file was created to verify the correctness of the RISC-V toolchain and environment.  
 This test includes username and machine-specific conditions.\
@@ -140,8 +163,12 @@ cat ~/riscv_toolchain/unique_test.c
 ```bash
 nano ~/riscv_toolchain/unique_test.c
 ```
+![WhatsApp Image 2025-08-02 at 12 28 48_e4a2851f](https://github.com/user-attachments/assets/222f6440-7b4b-42f1-bd12-df7adea8629f)
+
 ## step-3:  Create unique_test.c 
-🗂️ **File:** [`unique_test.c`](./unique_test.c) \
+🗂️ **File:** [`unique_test.c`](./unique_test.c) 
+![WhatsApp Image 2025-08-02 at 12 28 15_c9a8d2b4](https://github.com/user-attachments/assets/f09e6c68-d532-4594-ba56-3718a6cd2aeb)
+
 
 ## step-4: Compile with injected identity and RISC‑V flags
 ```bash
@@ -161,7 +188,8 @@ Host: <your-hostname>
 UniqueID: 0x<64-bit-hex> 
 GCC_VLEN: <number>
 ```
-![unique_test_output_shikha](https://github.com/user-attachments/assets/6341814e-c59c-4b14-897f-a38474c99a18)
+![WhatsApp Image 2025-08-02 at 12 05 41_44ee91df](https://github.com/user-attachments/assets/8cc67962-ae2b-4e05-b1f8-d6adbfb1820b)
+
 
 
 
