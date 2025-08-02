@@ -34,6 +34,17 @@ sudo apt-get install -y git vim autoconf automake autotools-dev curl \
 libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex \ 
 texinfo gperf libtool patchutils bc zlib1g-dev libexpat1-dev gtkwave
 ```
+![WhatsApp Image 2025-08-02 at 12 50 15_1452b350](https://github.com/user-attachments/assets/7b3a0da6-f2b9-41f7-a2de-1961a8457164)
+
+If you see ```E: Unable to locate package``` for ```libmpc-dev``` or ```texinfo```, just install them individually:
+```bash
+sudo apt install libmpc-dev
+```
+```bash
+sudo apt install texinfo
+```
+![WhatsApp Image 2025-08-02 at 12 50 39_27c4b667](https://github.com/user-attachments/assets/b3e64062-df3c-488a-9a3a-f4edbc636853)
+
 # Task 2 - Create a Workspace Directory
 Created a new directory named 'riscv_toolchain' under the home directory to store all RISC-V related files, toolchains, and build outputs. 
 ```bash
@@ -55,7 +66,8 @@ wget "https://static.dev.sifive.com/dev-tools/riscv64-unknown-elf-gcc
 tar -xvzf riscv64-unknown-elf-gcc-8.3.0-2019.08.0-x86_64-linux
 ubuntu14.tar.gz
 ```
-![WhatsApp Image 2025-08-02 at 11 48 47_3c681748](https://github.com/user-attachments/assets/e0244228-8669-40f1-8110-10fda4052538)
+![WhatsApp Image 2025-08-02 at 12 55 03_7f189116](https://github.com/user-attachments/assets/d3518b60-30a8-44a4-9a0e-f9d61f85c052)
+
 
 # Task 4 -  Add toolchain to PATH (current shell + persistent)
 ## step-1 Temporarily set the path
@@ -89,6 +101,8 @@ cd $pwd/riscv_toolchain
 git clone https://github.com/riscv/riscv-isa-sim.git 
 cd riscv-isa-sim
 ```
+![WhatsApp Image 2025-08-02 at 12 57 53_42cf1dfd](https://github.com/user-attachments/assets/dc8fa6cf-1ffe-4e1f-96b5-70b50716c70f)
+
 ## step-2: Build Spike
 ```bash
 mkdir -p build && cd build 
@@ -97,6 +111,9 @@ mkdir -p build && cd build
 make -j$(nproc) 
 sudo make install
 ```
+![WhatsApp Image 2025-08-02 at 12 58 26_1c5847b2](https://github.com/user-attachments/assets/aa66f40e-299b-41f5-bba7-cce424a1125a)
+![WhatsApp Image 2025-08-02 at 12 58 52_cdd0627a](https://github.com/user-attachments/assets/b11eb94d-2bc3-4440-83b3-8c6b6ffee3e7)
+
 # Task 7 - Build and install the RISC‑V Proxy Kernel (riscv-pk)
 The Proxy Kernel is a minimal kernal required to run C programs on Spike simulator.
 ## step-1: Clone the Proxy Kernel repository
@@ -105,10 +122,12 @@ cd $pwd/riscv_toolchain
 git clone https://github.com/riscv/riscv-pk.git 
 cd riscv-pk
 ```
+![WhatsApp Image 2025-08-02 at 13 08 56_909d823e](https://github.com/user-attachments/assets/80dcc7a8-2180-4ae3-bb3d-eed6b315e218)
+
 ## step-2: Build pk
 ```bash
 mkdir -p build && cd build 
-../configure --prefix=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc
+../configure --prefix=$pwd/riscv_toolchain/riscv64-unknown-elf-gcc-
 8.3.0-2019.08.0-x86_64-linux-ubuntu14 --host=riscv64-unknown-elf 
 make
 sudo make install
@@ -167,8 +186,10 @@ nano ~/riscv_toolchain/unique_test.c
 
 ## step-3:  Create unique_test.c 
 🗂️ **File:** [`unique_test.c`](./unique_test.c) 
-![WhatsApp Image 2025-08-02 at 12 28 15_c9a8d2b4](https://github.com/user-attachments/assets/f09e6c68-d532-4594-ba56-3718a6cd2aeb)
 
+![WhatsApp Image 2025-08-02 at 12 28 15_c9a8d2b4](https://github.com/user-attachments/assets/f09e6c68-d532-4594-ba56-3718a6cd2aeb)
+To **save the file**: Press ```Ctrl + O``` then Press ```Enter```
+To **exit**: Press ```Ctrl + X```
 
 ## step-4: Compile with injected identity and RISC‑V flags
 ```bash
