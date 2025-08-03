@@ -19,7 +19,7 @@ This task demonstrates compiling and running RISC-V C programs on Spike, with id
 ```
 # B. Common header (save as unique.h)
 📁**File**: 
-To **save** the file: Press Ctrl + O then Press Enter \ To **exit**: Press Ctrl + X
+To **save** the file: Press Ctrl + O then Press Enter To **exit**: Press Ctrl + X
 # C.  Programs to implement
 Each program must include unique.h and print the header first.
 ## 1. factorial.c
@@ -76,7 +76,53 @@ nano Instruction_decoding.md
 
 ![WhatsApp Image 2025-08-04 at 00 24 52_0c141e41](https://github.com/user-attachments/assets/df92fc6b-ec57-455f-b571-62bac6c4d558)
 
-
+#  Programs to implement - escriptions for the other 3 programs  
+## 2. max_array.c
+Find the maximum value in a static integer array using a simple for loop.
+```bash
+#include "unique.h"
+ int main(void){
+ uniq_print_header("max_array");
+ int a[] = {42,-7,19,88,3,88,5,-100,37};
+ int n = sizeof(a)/sizeof(a[0]), max=a[0];
+ for(int i=1;i<n;i++) if(a[i]>max) max=a[i];
+ printf("Array length=%d, Max=%d\n", n, max);
+ return 0;
+ }
+```
+## 3. bitops.c
+Perform basic bitwise operations: AND, OR, XOR, NOT, left shift, right shift.
+```bash
+ #include "unique.h"
+ int main(void){
+ uniq_print_header("bitops");
+ unsigned x=0xA5A5A5A5u, y=0x0F0F1234u;
+ printf("x&y=0x%08X\n", x&y);
+ printf("x|y=0x%08X\n", x|y);
+ printf("x^y=0x%08X\n", x^y);
+ printf("x<<3=0x%08X\n", x<<3);
+ printf("y>>2=0x%08X\n", y>>2);
+ return 0;
+ }
+```
+## 4. bubble_sort.c
+Sort a static integer array using bubble sort and print the sorted output.
+```bash
+ #include "unique.h"
+ void bubble(int *a,int n){ for(int i=0;i<n-1;i++) for(int j=0;j<n-1-i;j++) if(a[j]>a[j
+ +1]){int t=a[j];a[j]=a[j+1];a[j+1]=t;} }
+ int main(void){
+ uniq_print_header("bubble_sort");
+ int a[]={9,4,1,7,3,8,2,6,5}, n=sizeof(a)/sizeof(a[0]);
+ bubble(a,n);
+ printf("Sorted:"); for(int i=0;i<n;i++) printf(" %d",a[i]); puts("");
+ return 0;
+ }
+```
+# 🔁 Common Steps for All Programs
+The same commands were used for all 4 programs:  
+*`factorial.c`, `max_array.c`, `bitops.c`, and `bubble_sort.c`.*
+**To use them, just replace `filename` with the name of the program**
 
 
 
