@@ -170,8 +170,8 @@ spike --version || spike -h
 which pk 
 ```
 ![WhatsApp Image 2025-08-02 at 11 57 21_f571cf77](https://github.com/user-attachments/assets/bbf039ec-1498-4dfb-a78d-650703d97692)
-![WhatsApp Image 2025-08-02 at 11 57 53_aa6bbaa6](https://github.com/user-attachments/assets/cf3e489f-0ca8-4f1d-9752-ce0b64b1f8e4)
 *note: Since Spike does not support `--version`, but shows the version in `spike -h`*
+![WhatsApp Image 2025-08-02 at 11 57 53_aa6bbaa6](https://github.com/user-attachments/assets/cf3e489f-0ca8-4f1d-9752-ce0b64b1f8e4)
 
 # Final Deliverable: A Unique C Test (Username & Machine Dependent) 
 A unique test file was created to verify the correctness of the RISC-V toolchain and environment.  
