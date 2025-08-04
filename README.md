@@ -171,6 +171,7 @@ which pk
 ```
 ![WhatsApp Image 2025-08-02 at 11 57 21_f571cf77](https://github.com/user-attachments/assets/bbf039ec-1498-4dfb-a78d-650703d97692)
 ![WhatsApp Image 2025-08-02 at 11 57 53_aa6bbaa6](https://github.com/user-attachments/assets/cf3e489f-0ca8-4f1d-9752-ce0b64b1f8e4)
+*note: Since Spike does not support `--version`, but shows the version in `spike -h`*
 
 # Final Deliverable: A Unique C Test (Username & Machine Dependent) 
 A unique test file was created to verify the correctness of the RISC-V toolchain and environment.  
@@ -190,7 +191,7 @@ nano ~/riscv_toolchain/unique_test.c
 🗂️ **File:** [`unique_test.c`](./unique_test.c) 
 
 ![WhatsApp Image 2025-08-02 at 12 28 15_c9a8d2b4](https://github.com/user-attachments/assets/f09e6c68-d532-4594-ba56-3718a6cd2aeb)
-To **save the file**: Press ```Ctrl + O``` then Press ```Enter```
+To **save the file**: Press ```Ctrl + O``` then Press ```Enter```,
 To **exit**: Press ```Ctrl + X```
 
 ## step-4: Compile with injected identity and RISC‑V flags
