@@ -157,6 +157,32 @@ source ~/.bashrc
 ![WhatsApp Image 2025-08-02 at 12 27 47_78860880](https://github.com/user-attachments/assets/5ee6333f-9224-4485-8a54-62ce09d5014c)
 
 # Task 9 -  (Optional) Install Icarus Verilog
+  For digital design education, you’ll often verify RTL with Icarus Verilog and view
+waveforms with GTKWaves. \
+This is not required for the C uniqueness test but is part of a 
+complete RISC‑V learning toolchain. 
+```bash
+cd $pwd/riscv_toolchain 
+git clone https://github.com/steveicarus/iverilog.git 
+cd iverilog 
+git checkout --track -b v10-branch origin/v10-branch 
+git pull 
+chmod +x autoconf.sh
+```
+![WhatsApp Image 2025-08-04 at 21 33 44_a76a6aec](https://github.com/user-attachments/assets/433d2ff0-e9ae-4caa-9ee1-0a81a71b8661)
+
+```bash
+./autoconf.sh 
+./configure 
+make -j$(nproc) 
+sudo make install
+```
+![WhatsApp Image 2025-08-04 at 21 29 32_d2653eb8](https://github.com/user-attachments/assets/f2197a3c-a64d-41fc-9b68-8e8d228db46a)
+![WhatsApp Image 2025-08-04 at 21 29 49_b7495fdd](https://github.com/user-attachments/assets/90922b3c-9a94-470d-95da-7adec089069b)
+![WhatsApp Image 2025-08-04 at 21 30 13_77fa6472](https://github.com/user-attachments/assets/d31dfbf6-df45-411a-afc7-cd8b98853cd4)
+![WhatsApp Image 2025-08-04 at 21 31 05_91519530](https://github.com/user-attachments/assets/6add7f44-388b-4c38-a4ba-3e6751be0097)
+![WhatsApp Image 2025-08-04 at 21 31 19_478d829f](https://github.com/user-attachments/assets/4a583124-9e2a-4ed4-a571-9c57c1a08cfa)
+
 # Task 10 -  Quick sanity checks 
 ```bash
 which riscv64-unknown-elf-gcc 
