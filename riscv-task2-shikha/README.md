@@ -95,7 +95,7 @@ nano Instruction_decoding.md
 
 ![WhatsApp Image 2025-08-04 at 00 24 52_0c141e41](https://github.com/user-attachments/assets/df92fc6b-ec57-455f-b571-62bac6c4d558)
 
-#  Programs to implement - escriptions for the other 3 programs  
+#  Programs to implement - descriptions for the other 3 programs  
 ## 2. max_array.c
 Find the maximum value in a static integer array using a simple for loop.
 ```bash
