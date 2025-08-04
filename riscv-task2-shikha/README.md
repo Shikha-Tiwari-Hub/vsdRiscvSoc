@@ -27,9 +27,10 @@ nano unique.h
 ![WhatsApp Image 2025-08-04 at 13 03 44_5a643b3a](https://github.com/user-attachments/assets/e303d853-a57b-4aa6-b0b1-35c5a899ee69)
 
 ## step 2 - Create  
-📁**File**: unique.h 
+📁**File**: [unique.h](./unique.h)
+
 ![WhatsApp Image 2025-08-04 at 13 00 58_5bc9a712](https://github.com/user-attachments/assets/67e1683c-d3c8-437c-93ef-df5307cb2cba)
-To **save** the file: Press Ctrl + O then Press Enter To **exit**: Press Ctrl + X
+To **save** the file: Press Ctrl + O then Press Enter, To **exit**: Press Ctrl + X
 
 # C.  Programs to implement
 Each program must include unique.h and print the header first.
@@ -110,8 +111,9 @@ Find the maximum value in a static integer array using a simple for loop.
 ```
 ![WhatsApp Image 2025-08-04 at 13 11 19_71217351](https://github.com/user-attachments/assets/eddae24c-f1bd-440a-831d-524191a64e1a)
 ![WhatsApp Image 2025-08-04 at 13 11 06_7bc28d29](https://github.com/user-attachments/assets/5e52486b-a844-4553-8ab4-6f49176cb942)
-![max_array_output](https://github.com/user-attachments/assets/ac043449-b641-4b90-b2d9-be0b65c068d5)
-![max_array_main_asm](https://github.com/user-attachments/assets/a773a3d9-ec15-4a63-bb50-10f230757113)
+![max_array_output](https://github.com/user-attachments/assets/77a9d722-5cdd-4e6a-8fc6-9ff06f9bf603)
+![WhatsApp Image 2025-08-03 at 12 37 45_6435873d](https://github.com/user-attachments/assets/30625673-caa7-4185-bf68-9a7ac9761fb0)
+![WhatsApp Image 2025-08-04 at 13 17 02_93670c95](https://github.com/user-attachments/assets/8b5c0dc8-fbab-440a-a03c-aea3a341ae48)
 
 ## 3. bitops.c
 Perform basic bitwise operations: AND, OR, XOR, NOT, left shift, right shift.
