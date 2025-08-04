@@ -17,9 +17,20 @@ This task demonstrates compiling and running RISC-V C programs on Spike, with id
  export T=$(date-u +%Y-%m-%dT%H:%M:%SZ)
  export E=$(date +%s)
 ```
+![WhatsApp Image 2025-08-04 at 12 57 54_1d2f03b6](https://github.com/user-attachments/assets/09a55e5e-bc09-4a35-b5cb-2301c83db75a)
+
 # B. Common header (save as unique.h)
-📁**File**: 
+## step 1 - Open nano editor
+```bash
+nano unique.h
+```
+![WhatsApp Image 2025-08-04 at 13 03 44_5a643b3a](https://github.com/user-attachments/assets/e303d853-a57b-4aa6-b0b1-35c5a899ee69)
+
+## step 2 - Create  
+📁**File**: unique.h 
+![WhatsApp Image 2025-08-04 at 13 00 58_5bc9a712](https://github.com/user-attachments/assets/67e1683c-d3c8-437c-93ef-df5307cb2cba)
 To **save** the file: Press Ctrl + O then Press Enter To **exit**: Press Ctrl + X
+
 # C.  Programs to implement
 Each program must include unique.h and print the header first.
 ## 1. factorial.c
@@ -34,6 +45,9 @@ Recursive calculation of factorial of 12 using ```unsigned long long``` with ide
  return 0;
  }
 ```
+![WhatsApp Image 2025-08-04 at 13 07 58_1b43a1cb](https://github.com/user-attachments/assets/167e50f6-3c01-44fd-ab26-d6339851c468)
+![WhatsApp Image 2025-08-04 at 13 07 30_a65fda6b](https://github.com/user-attachments/assets/43f14275-c75c-4764-9965-52d90e136850)
+
 *Note: All steps (compilation, spike execution, `.s` generation, disassembly, and instruction decoding) were completed **program-by-program**, not all at once.*
 *This ensured:*
 - Identity-tagged builds were correct and visible per program
@@ -50,6 +64,8 @@ Recursive calculation of factorial of 12 using ```unsigned long long``` with ide
 ```bash
  spike pk ./factorial
 ```
+![factorial_output](https://github.com/user-attachments/assets/5bb45f52-3a4a-4c60-a354-602282efaa8f)
+
 # E. Produce assembly and disassembly
 ## step 1 -  Assembly (.s):
 ```bash
@@ -60,6 +76,8 @@ Recursive calculation of factorial of 12 using ```unsigned long long``` with ide
 riscv64-unknown-elf-objdump-d ./factorial | sed-n '/<main>:/,/^$/p' | tee
  factorial_main_objdump.txt
 ```
+![factorial_main_asm](https://github.com/user-attachments/assets/44b90077-12eb-4010-aae3-57dee39a217f)
+
 # F. Instruction decoding (integer type)
  Decode at least 5 RISC-V integer instructions from your `.s` or `.objdump`. Use the following
  format in a markdown file:
@@ -90,6 +108,11 @@ Find the maximum value in a static integer array using a simple for loop.
  return 0;
  }
 ```
+![WhatsApp Image 2025-08-04 at 13 11 19_71217351](https://github.com/user-attachments/assets/eddae24c-f1bd-440a-831d-524191a64e1a)
+![WhatsApp Image 2025-08-04 at 13 11 06_7bc28d29](https://github.com/user-attachments/assets/5e52486b-a844-4553-8ab4-6f49176cb942)
+![max_array_output](https://github.com/user-attachments/assets/ac043449-b641-4b90-b2d9-be0b65c068d5)
+![max_array_main_asm](https://github.com/user-attachments/assets/a773a3d9-ec15-4a63-bb50-10f230757113)
+
 ## 3. bitops.c
 Perform basic bitwise operations: AND, OR, XOR, NOT, left shift, right shift.
 ```bash
