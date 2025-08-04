@@ -130,6 +130,12 @@ Perform basic bitwise operations: AND, OR, XOR, NOT, left shift, right shift.
  return 0;
  }
 ```
+![WhatsApp Image 2025-08-04 at 13 22 33_16399ef1](https://github.com/user-attachments/assets/85d8f98e-8d2a-4104-909a-c17606ef8996)
+![WhatsApp Image 2025-08-04 at 13 22 14_60d09f5d](https://github.com/user-attachments/assets/a9f73d77-aa85-492d-b892-5aa4d2052440)
+![WhatsApp Image 2025-08-04 at 12 32 53_85da4b78](https://github.com/user-attachments/assets/717eda37-b286-47ae-bbe0-c36f0b79e757)
+![bitops_main_asm](https://github.com/user-attachments/assets/bdc8f209-e86c-4e76-8bba-0269706d33ea)
+![WhatsApp Image 2025-08-04 at 13 24 12_0e7ee6ea](https://github.com/user-attachments/assets/b9891621-ee2f-4761-83b3-b6c6a2f5fc58)
+
 ## 4. bubble_sort.c
 Sort a static integer array using bubble sort and print the sorted output.
 ```bash
@@ -144,6 +150,12 @@ Sort a static integer array using bubble sort and print the sorted output.
  return 0;
  }
 ```
+![WhatsApp Image 2025-08-04 at 13 25 28_85133388](https://github.com/user-attachments/assets/a1494208-b4e4-4e31-8113-fc455ed5d076)
+![WhatsApp Image 2025-08-04 at 13 25 49_411a7763](https://github.com/user-attachments/assets/8b45a6be-2790-46fb-b0dc-f0fad4d2bea4)
+![bubble_sort_output](https://github.com/user-attachments/assets/e7176f3f-8f54-45fe-8bc1-7bff37db6954)
+![bubble_sort_main_asm](https://github.com/user-attachments/assets/924f7a09-4704-43cd-961b-e76f92a67bfe)
+![WhatsApp Image 2025-08-04 at 13 27 11_b04f43c7](https://github.com/user-attachments/assets/f0187190-9f97-4a24-93f2-ace56a7c01fc)
+
 # 🔁 Common Steps for All Programs
 The same commands were used for all 4 programs:  
 *`factorial.c`, `max_array.c`, `bitops.c`, and `bubble_sort.c`.*
