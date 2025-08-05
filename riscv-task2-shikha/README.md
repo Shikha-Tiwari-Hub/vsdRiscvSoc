@@ -5,10 +5,10 @@ This task demonstrates compiling and running RISC-V C programs on Spike, with id
 # Tools Used
 - Ubuntu 20.04 LTS (VM)
 - `riscv64-unknown-elf-gcc` 8.3.0
- ![WhatsApp Image 2025-08-04 at 19 49 29_e6120b67](https://github.com/user-attachments/assets/a4fe0e9f-51a3-4241-8bc8-c9b9705a4597) 
+- ![WhatsApp Image 2025-08-04 at 19 49 29_e6120b67](https://github.com/user-attachments/assets/a4fe0e9f-51a3-4241-8bc8-c9b9705a4597) 
    
 - `spike pk`
-   ![WhatsApp Image 2025-08-04 at 19 58 42_8b5985ca](https://github.com/user-attachments/assets/470ba900-e113-490d-a7de-472684a6094d)
+ -  ![WhatsApp Image 2025-08-04 at 19 58 42_8b5985ca](https://github.com/user-attachments/assets/470ba900-e113-490d-a7de-472684a6094d)
 
 - `riscv64-unknown-elf-objdump`
 
