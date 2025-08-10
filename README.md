@@ -57,9 +57,9 @@ cd riscv_toolchain
 ./configure --prefix=/opt/riscv
 make
 ```
+![WhatsApp Image 2025-08-10 at 12 23 17_0819cb29](https://github.com/user-attachments/assets/bec101fc-81ad-4f34-bb38-4ba4bdd10c86)
 ![WhatsApp Image 2025-08-10 at 12 18 15_8547ea85](https://github.com/user-attachments/assets/83de5114-d937-41f8-b012-b3b8c021ed55)
 ![WhatsApp Image 2025-08-10 at 12 18 40_84035241](https://github.com/user-attachments/assets/174d29fb-1aa5-42d8-a93e-c80847f4dda6)
-![WhatsApp Image 2025-08-02 at 11 25 43_6f754942](https://github.com/user-attachments/assets/83b2b0ca-769a-4007-949a-e7975214182f)
 
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
 This Provides riscv64-unknown-elf-gcc (newlib) to compile bare‑metal/user‑space RISC‑V 
@@ -107,7 +107,7 @@ cd $pwd/riscv_toolchain
 git clone https://github.com/riscv/riscv-isa-sim.git 
 cd riscv-isa-sim
 ```
-![WhatsApp Image 2025-08-02 at 12 57 53_42cf1dfd](https://github.com/user-attachments/assets/dc8fa6cf-1ffe-4e1f-96b5-70b50716c70f)
+![WhatsApp Image 2025-08-10 at 12 24 41_68f5ba64](https://github.com/user-attachments/assets/4ff3d07a-8433-43db-a306-4179c350c12a)
 
 ## step-2: Build Spike
 ```bash
