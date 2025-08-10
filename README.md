@@ -55,6 +55,7 @@ pwd=$PWD
 mkdir -p riscv_toolchain 
 cd riscv_toolchain
 ```
+![WhatsApp Image 2025-08-10 at 12 22 27_8adea892](https://github.com/user-attachments/assets/2015b8b3-54f7-4a4c-bc93-57df9ab49f85)
 
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
 This Provides riscv64-unknown-elf-gcc (newlib) to compile bare‑metal/user‑space RISC‑V 
