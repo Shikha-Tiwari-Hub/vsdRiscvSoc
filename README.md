@@ -186,7 +186,6 @@ sudo make install
 ![WhatsApp Image 2025-08-04 at 21 29 49_b7495fdd](https://github.com/user-attachments/assets/90922b3c-9a94-470d-95da-7adec089069b)
 ![WhatsApp Image 2025-08-04 at 21 30 13_77fa6472](https://github.com/user-attachments/assets/d31dfbf6-df45-411a-afc7-cd8b98853cd4)
 ![WhatsApp Image 2025-08-04 at 21 31 05_91519530](https://github.com/user-attachments/assets/6add7f44-388b-4c38-a4ba-3e6751be0097)
-![WhatsApp Image 2025-08-10 at 14 51 58_f1c407b0](https://github.com/user-attachments/assets/6ae6f29a-a76d-4d47-98d7-3c6b16c39573)
 ![WhatsApp Image 2025-08-04 at 21 31 19_478d829f](https://github.com/user-attachments/assets/4a583124-9e2a-4ed4-a571-9c57c1a08cfa)
 
 # Task 10 -  Quick sanity checks 
