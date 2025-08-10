@@ -120,6 +120,7 @@ sudo make install
 ![WhatsApp Image 2025-08-10 at 15 25 59_3c086813](https://github.com/user-attachments/assets/647d67f5-f6a4-4076-81a4-532220681aa0)
 ![WhatsApp Image 2025-08-10 at 14 51 58_9b2bf497](https://github.com/user-attachments/assets/8ce5a62b-20a1-4618-8872-a5e609094a0f)
 ![WhatsApp Image 2025-08-02 at 12 58 52_cdd0627a](https://github.com/user-attachments/assets/b11eb94d-2bc3-4440-83b3-8c6b6ffee3e7)
+<img width="391" height="59" alt="image" src="https://github.com/user-attachments/assets/a0c6dc03-51e5-4040-a89d-d85344faf4d5" />
 
 # Task 7 - Build and install the RISC‑V Proxy Kernel (riscv-pk)
 The Proxy Kernel is a minimal kernal required to run C programs on Spike simulator.
