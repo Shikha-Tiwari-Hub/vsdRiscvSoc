@@ -54,11 +54,11 @@ cd
 pwd=$PWD 
 git clone https://github.com/riscv/riscv-gnu-toolchain riscv_toolchain
 cd riscv_toolchain
-./configure --prefix=/opt/riscv
+./configure --prefix=$HOME/riscv
 make
 ```
 ![WhatsApp Image 2025-08-10 at 12 23 17_0819cb29](https://github.com/user-attachments/assets/bec101fc-81ad-4f34-bb38-4ba4bdd10c86)
-![WhatsApp Image 2025-08-10 at 12 18 15_8547ea85](https://github.com/user-attachments/assets/83de5114-d937-41f8-b012-b3b8c021ed55)
+![WhatsApp Image 2025-08-10 at 13 05 15_68608e06](https://github.com/user-attachments/assets/f6b8b058-c226-4591-b1e6-fffb19381f23)
 
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
 This Provides riscv64-unknown-elf-gcc (newlib) to compile bare‑metal/user‑space RISC‑V 
