@@ -139,6 +139,7 @@ sudo make install
 ```
 ![WhatsApp Image 2025-08-02 at 11 45 10_46457e10](https://github.com/user-attachments/assets/42667435-9c3e-4277-9014-5aea3c8d6933)
 ![WhatsApp Image 2025-08-02 at 11 46 32_ad3dba4b](https://github.com/user-attachments/assets/0074b644-10d8-424a-b7c9-67625356f46a)
+![WhatsApp Image 2025-08-10 at 14 51 58_0bc4cea8](https://github.com/user-attachments/assets/78841599-b5ec-463e-86c9-cf4742c98983)
 ![WhatsApp Image 2025-08-02 at 11 49 51_4fd51598](https://github.com/user-attachments/assets/5d62cb06-6dc8-4823-8427-000d92b7885a)
 
 # Task 8 - Ensure the cross bin directory is in PATH
