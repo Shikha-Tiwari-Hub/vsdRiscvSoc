@@ -113,10 +113,10 @@ mkdir -p build && cd build
 make -j$(nproc) 
 sudo make install
 ```
-![WhatsApp Image 2025-08-02 at 12 58 26_1c5847b2](https://github.com/user-attachments/assets/aa66f40e-299b-41f5-bba7-cce424a1125a)
 ![WhatsApp Image 2025-08-10 at 14 48 54_05a942a0](https://github.com/user-attachments/assets/ee558afe-965f-42ba-9810-b2a42b6d3fc5)
 ![WhatsApp Image 2025-08-10 at 14 49 15_676a0ca4](https://github.com/user-attachments/assets/96cd77d7-dcf1-47b4-bd89-83554a610034)
 ![WhatsApp Image 2025-08-10 at 14 49 51_495ceed5](https://github.com/user-attachments/assets/c80ac4e6-b66d-4ac8-be25-a6f69a4575a7)
+![WhatsApp Image 2025-08-10 at 14 51 58_9b2bf497](https://github.com/user-attachments/assets/8ce5a62b-20a1-4618-8872-a5e609094a0f)
 ![WhatsApp Image 2025-08-02 at 12 58 52_cdd0627a](https://github.com/user-attachments/assets/b11eb94d-2bc3-4440-83b3-8c6b6ffee3e7)
 
 # Task 7 - Build and install the RISC‑V Proxy Kernel (riscv-pk)
