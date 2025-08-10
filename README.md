@@ -59,6 +59,7 @@ make
 ```
 ![WhatsApp Image 2025-08-10 at 12 23 17_0819cb29](https://github.com/user-attachments/assets/bec101fc-81ad-4f34-bb38-4ba4bdd10c86)
 ![WhatsApp Image 2025-08-10 at 13 05 15_68608e06](https://github.com/user-attachments/assets/f6b8b058-c226-4591-b1e6-fffb19381f23)
+![WhatsApp Image 2025-08-10 at 13 24 09_7bc62d4f](https://github.com/user-attachments/assets/5f820057-a57a-4cea-931c-4825bad59aba)
 
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
 This Provides riscv64-unknown-elf-gcc (newlib) to compile bare‑metal/user‑space RISC‑V 
