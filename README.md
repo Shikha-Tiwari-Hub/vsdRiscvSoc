@@ -47,23 +47,18 @@ sudo apt install texinfo
 ```
 ![WhatsApp Image 2025-08-02 at 12 50 39_27c4b667](https://github.com/user-attachments/assets/b3e64062-df3c-488a-9a3a-f4edbc636853)
 
-# Clone & Install RISC-V GNU Toolchain
-cd ~
-git clone https://github.com/riscv/riscv-gnu-toolchain riscv_toolchain
-cd riscv_toolchain
-./configure --prefix=/opt/riscv
-make
-![WhatsApp Image 2025-08-10 at 12 18 15_8547ea85](https://github.com/user-attachments/assets/83de5114-d937-41f8-b012-b3b8c021ed55)
-![WhatsApp Image 2025-08-10 at 12 18 40_84035241](https://github.com/user-attachments/assets/174d29fb-1aa5-42d8-a93e-c80847f4dda6)
-
 # Task 2 - Create a Workspace Directory
 Created a new directory named 'riscv_toolchain' under the home directory to store all RISC-V related files, toolchains, and build outputs. 
 ```bash
 cd 
 pwd=$PWD 
-mkdir -p riscv_toolchain 
+git clone https://github.com/riscv/riscv-gnu-toolchain riscv_toolchain
 cd riscv_toolchain
+./configure --prefix=/opt/riscv
+make
 ```
+![WhatsApp Image 2025-08-10 at 12 18 15_8547ea85](https://github.com/user-attachments/assets/83de5114-d937-41f8-b012-b3b8c021ed55)
+![WhatsApp Image 2025-08-10 at 12 18 40_84035241](https://github.com/user-attachments/assets/174d29fb-1aa5-42d8-a93e-c80847f4dda6)
 ![WhatsApp Image 2025-08-02 at 11 25 43_6f754942](https://github.com/user-attachments/assets/83b2b0ca-769a-4007-949a-e7975214182f)
 
 # Task 3-Get a prebuilt RISC‑V GCC toolchain
