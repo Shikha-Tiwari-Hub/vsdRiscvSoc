@@ -1,0 +1,8 @@
+$ riscv64-unknown-elf-gcc -o2 -Wall -march=rv64imac -mabi=lp64 -DUSERNAME="$(hostname)" unique_test.c -o unique_test
+$ spike pk ./unique_test
+bbl loader
+RISC-V Uniqueness Check
+User: shikha-VirtualBox
+Host: unknown_host
+UniqueID: 0xfce14874b452f61f
+GCC_VLEN: 5
