@@ -1,0 +1,40 @@
+# GNU nano 6.2
+## Instruction decoding - factorial.c
+
+| Instruction               | Type | Opcode  | rd   | rsi  | rs2  | funct3 | funct7 | Binary (hex) | Description                          |
+|---------------------------|------|---------|------|------|------|--------|--------|--------------|--------------------------------------|
+| addt sp, sp, -32          | C    | 01      | x2   | x2   | --   | --     | --     | 1101         | sp = sp - 32 (compressed)            |
+| sd ra, 24(sp)             | S    | 0100011 | --   | x2   | x1   | 011    | --     | ec06         | store x1 (ra) at sp + 24             |
+| addt a0, a5, 1952         | I    | 0010011 | x10  | x15  | --   | 000    | --     | 74078513     | a0 = a5 + 1952                       |
+| jal a0, 1054c-printf>     | J    | 1101111 | x10  | --   | --   | --     | --     | lac000ef     | jump to printf, save next in a0      |
+| ret                       | I    | 1100111 | x0   | x1   | --   | 000    | --     | 8082         | return to address in ra (x1)         |
+
+# Instruction Decoding - max_array.c
+
+| Instruction               | Type | Opcode  | rd   | rs1  | rs2  | funct3 | Binary (hex) | Description                          |
+|---------------------------|------|---------|-------|------|------|--------|--------------|--------------------------------------|
+| addi sp, sp, -48          | I    | 0010011 | x2    | x2   | --   | --     | 7179         | Decrease stack pointer by 48 bytes   |
+| sd ra, 40(sp)             | S    | 0100011 | --    | x2   | x1   | 011    | f406         | Store return address to stack        |
+| addi a5, a5, -16          | I    | 0010011 | x15   | x15  | --   | --     | ff040713     | a5 = a5 - 16                         |
+| bge a5, a4, <target>      | B    | 1100011 | --    | x15  | x14  | 101    | 00e7dc63     | Branch if a5 >= a4                   |
+| lw a4, @(a5)              | I    | 0000011 | x14   | x15  | --   | 010    | fe842783     | Load word from memory to a4          |
+
+# Instruction Decoding - bitops.c
+
+| Instruction          | Type   | Opcode  | rd  | rs1 | rs2 | funct3 | funct7   | Binary (hex) | Description                     |
+|----------------------|--------|---------|-----|-----|-----|--------|----------|--------------|---------------------------------|
+| addi sp, sp, -32    | I      | 0010011 | x2  | x2  | --  | 000    | --       | 1101         | Allocate stack space            |
+| sd ra, 24(sp)       | S      | 0100011 | --  | x2  | x1  | 011    | --       | ec06         | Store return address to stack   |
+| and a5, a5, a4      | R      | 0110011 | x15 | x15 | x14 | 111    | 0000000  | 8ff9         | Bitwise AND of a5 and a4        |
+| or a5, a5, a4       | R      | 0110011 | x15 | x15 | x14 | 110    | 0000000  | 8fd9         | Bitwise OR of a5 and a4         |
+| xor a5, a5, a4      | R      | 0110011 | x15 | x15 | x14 | 100    | 0000000  | 8fb9         | Bitwise XOR of a5 and a4        |
+
+# Instruction Decoding - bubble_sort.c
+
+| Instruction          | Type | Opcode  | rd   | rs1  | rs2  | funct3 | funct7 | Binary (hex) | Description                          |
+|----------------------|------|---------|-------|------|------|--------|--------|--------------|--------------------------------------|
+| addi sp, sp, -32    | I    | 0010011 | x2    | x2   | --   | 000    | --     | 1101         | Adjust stack pointer by -32          |
+| sd ra, 24(sp)       | S    | 0100011 | --    | x2   | x1   | 011    | --     | ec06         | Store return address at sp+24        |
+| and a5, a5, a4      | R    | 0110011 | x15   | x15  | x14  | 111    | 0000000| 8ffF9         | Logical AND of a5 and a4             |
+| xor a5, a5, a4      | R    | 0110011 | x15   | x15  | x14  | 100    | 0000000| 8fb9         | Bitwise XOR of a5 and a4             |
+| jal ra, printf>     | J    | 1101111 | x1    | --   | --   | --     | --     | 2080000F     | Jump to printf with return in ra     |
