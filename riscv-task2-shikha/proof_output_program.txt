@@ -1,0 +1,69 @@
+# Factorial
+$ spike pk ./factorial
+bbl loader
+=== RISC-V Proof Header ===
+User       : shikha
+Host       : shikha-VirtualBox
+MachineID  : c948c7d3f695412a
+BuildTime  : 2025-08-02T08:33:55Z
+BuildEpoch : 175412360
+CCC        : riscv64-unknown-elf-gcc 8.3.0
+PointerBits: 64
+Program    : factorial
+ProofID    : 0x8044c29745703abb
+RunID      : 0x2a408490b9431221
+===========================
+n=12, n!=479001600
+
+# max_array
+$ spike pk ./max_array
+bbl loader
+=== RISC-V Proof Header ===
+User       : shikha
+Host       : shikha-VirtualBox
+MachineID  : c948c7d3f695412a
+BuildUTC   : 2025-08-03T07:01:58Z
+BuildEpoch : 1754204518
+GCC        : riscv64-unknown-elf-gcc 8.3.0
+PointerBits: 64
+Program    : max_array
+ProofID    : 0x2f6dc8fdbc4854c
+RunID      : 0x9e44efed66b04fa
+===========================
+MaxEnum = 19
+
+# bitops
+$ spike pk ./bitops
+bbl loader
+=== RISC-V Proof Header ===
+User       : shikha
+Host       : shikha-VirtualBox
+MachineID  : c948c7d3f695412a
+BuildUTC   : 2025-08-03T14:45:08Z
+BuildEpoch : 1754232308
+GCC        : riscv64-unknown-elf-gcc 8.3.0
+PointerBits: 64
+Program    : bitops
+ProofID    : 0x600b5fbb396e3c0e
+RunID      : 0xbf6b9ed7773db718
+=============================
+x & y = 0x05050024
+x | y = 0xAFAFB785
+x ^ y = 0xAAAAB791
+x << 3 = 0x20202028
+y >> 2 = 0x03C3C48D
+
+# bubble_sort
+$ spike pk ./bubble_sort
+bbl loader
+=== RISC-V Proof Header ===
+User       : shikha
+Host       : shikha-VirtualBox
+MachineID  : c948c7d3f695412a
+BuildUTC   : 2025-08-03T14:45:08Z
+BuildEpoch : 1754232308
+GCC        : riscv64-unknown-elf-gcc 8.3.0
+PointerBits: 64
+Program    : bubble_sort
+ProofID    : 0xaaa6b57cdcaa9eca
+RunID      : 0x2ee765c20b1c38bc
